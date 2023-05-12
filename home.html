@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà sách trực tuyến Karma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="Karma-logo.png">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/css--share/header.css">
+    <link rel="stylesheet" href="css/css--share/footer.css">
+    <link rel="stylesheet" href="css/css--share/base.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__navbar -->
+            <div class="header__navbar-bg">
+                <div class="header__navbar-container">
+                    <div class="header__navbar-title">
+                        <span>Nhà sách trực tuyến Karma</span>
+                    </div>
+                    <!-- Are login: header__navbar-login--not_login -->
+                    <!-- No login: header__navbar-login--are_login -->
+                    <div class="header__navbar-login header__navbar-login--not_login">
+                        <span class="navbar-login--not_login_text"><a href="sign_up.html">Đăng ký</a> | <a
+                                href="sign_in.html">Đăng nhập</a></span>
+                        <span class="navbar-login--are_login_text"><a href="">Xin chào: Khánh</a> | <a href="">Đăng
+                                xuất</a></span>
+                    </div>
+                </div>
+            </div>
+            <!-- header__navbar -->
+
+            <!-- header__search -->
+            <div class="header__search-bg">
+                <div class="header__search-container">
+                    <div class="header__logo">
+                        <a href="home.html"><img src="Karma-logo.png" alt=""></a>
+                    </div>
+                    <div class="header__search_bar">
+                        <div>
+                            <input type="search" placeholder="Tìm kiếm...">
+                        </div>
+                        <button><svg height="30px" class="SVGRoot" version="1.1" viewBox="0 0 100 60" width="64px"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
+                                xmlns:dc="http://purl.org/dc/elements/1.1/"
+                                xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                                xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                                xmlns:svg="http://www.w3.org/2000/svg">
+                                <defs class="defs3848"></defs>
+                                <g class="layer1">
+                                    <g class="g5183" style="stroke:#000000" transform="translate(25.5,-27)">
+                                        <circle class="fil0 str1" cx="0.73810571" cy="53.392174" class="circle15"
+                                            r="20.063322"
+                                            style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#FFFFFF;stroke-width:2.00005412;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+                                        </circle>
+                                        <line class="fil0 str2" id="line25"
+                                            style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#FFFFFF;stroke-width:3.99974346;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision"
+                                            x1="15.617603" x2="30.305107" y1="68.559662" y2="83.151169"></line>
+                                        <path class="fil0 str0"
+                                            d="m -12.701441,53.392174 c 0,-7.391751 6.047795,-13.439547 13.43954602,-13.439547"
+                                            class="path281"
+                                            style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#FFFFFF;stroke-width:2.00005412;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg></button>
+                    </div>
+                    <div class="header__cart">
+                        <a href="cart.html" class="header__cart-link">
+                            <div class="cart__cart_badge">
+                                <i class="fa-solid fa-cart-plus fa-2xl"></i>
+                                <span>3</span>
+                            </div>
+                            <div class="cart__text">
+                                <span class="cart_text">Giỏ hàng</span><br>
+                                <span>3</span>
+                                <span>sản phẩm</span>
+                            </div>
+                        </a>
+                        <!-- No product: cart__cart_badge--hover--no_product -->
+                        <!-- Has product: cart__cart_badge--hover--has_product -->
+                        <div class="cart__cart_badge--hover cart__cart_badge--hover--has_product">
+                            <img class="cart__cart_badge--hover--no_product-img" src="empty_cart.jpg" alt="">
+                            <span class="cart__cart_badge--hover--no_product-msg">
+                                Chưa có sản phẩm
+                            </span>
+
+                            <header class="cart_badge__header">
+                                <span>Số lượng sản phẩm: </span>
+                                <span>1</span>
+                            </header>
+                            <ul class="cart_badge__list">
+                                <li class="cart_badge__items">
+                                    <div class="cart_badge__items-img">
+                                        <a href=""><img
+                                                src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="cart_badge__items-info">
+                                        <a class="cart_badge__items-name" href="">
+                                            Người Trong Lưới
+                                        </a>
+                                        <div class="cart_badge__items-description">
+                                            <span class="items-description-version">
+                                                Bản thường
+                                            </span>
+                                            <br>
+                                            <span class="items-description-quantity">
+                                                154,000 x 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="cart_badge__items-times"><a href=""><i
+                                                class="fa-solid fa-circle-xmark"></i></a></span>
+                                </li>
+                            </ul>
+                            <div class="cart_badge__capital_sum">
+                                <span>Tổng tiền: </span>
+                                <span>154,000<ins>đ</ins></span>
+                            </div>
+                            <a href="" class="wrapper_test">
+                                <span>
+                                    Thanh toán
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- header__search -->
+
+            <!-- header__menu -->
+            <div class="header__menu-bg">
+                <div class="header__menu-container">
+                    <ul class="header__menu__ul-1">
+                        <li class="header__menu__li-1"><a class="header__menu__li-1__a" href="home.html">trang
+                                chủ</a></li>
+                        <li class="header__menu__li-1"><a class="header__menu__li-1__a" href="filter_product.html">sản
+                                phẩm</a>
+                            <ul class="header__menu__ul-2">
+                                <li><a href="">trinh thám - kinh dị</a></li>
+                                <li><a href="">văn học hiện đại</a></li>
+                                <li><a href="">văn học kinh điển</a></li>
+                                <li><a href="">fantasy</a></li>
+                                <li><a href="">light novel</a></li>
+                                <li><a href="">boys love - girls love</a></li>
+                                <li><a href="">boxset</a></li>
+                                <li><a href="">sách học ngữ</a></li>
+                                <li><a href="">manga - comic</a></li>
+                                <li><a href="">sách thiếu nhi</a></li>
+                                <li><a href="">phụ kiện</a></li>
+                                <li><a href="">combo sách</a></li>
+                            </ul>
+                        </li>
+                        <li class="header__menu__li-1"><a class="header__menu__li-1__a" href="">tin tức</a></li>
+                        <li class="header__menu__li-1"><a class="header__menu__li-1__a" href="news.html">về ipm</a>
+                        </li>
+                        <li class="header__menu__li-1"><a class="header__menu__li-1__a" href="">liên hệ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="hr--style">
+            <!-- header__menu -->
+        </header>
+        <!-- header -->
+
+
+        <!-- body -->
+        <div class="body">
+
+            <!-- body__slide_banner -->
+            <div class="body__slide_banner">
+                <a href=""><img src="slide_banner/slideshow_1.jpg" alt=""></a>
+                <a href=""><img src="slide_banner/slideshow_2.jpg" alt=""></a>
+                <a href=""><img src="slide_banner/slideshow_3.jpg" alt=""></a>
+                <a href=""><img src="slide_banner/slideshow_4.jpg" alt=""></a>
+            </div>
+            <!-- body__slide_banner -->
+
+            <!-- body__box_introduce -->
+            <div class="body__box_introduce-bg">
+                <div class="body__box_introduce-container">
+
+                    <div class="box_introduce-border">
+                        <div class="box_introduce-icon"><i class="fa-sharp fa-solid fa-truck-arrow-right fa-2xl"></i>
+                        </div>
+                        <div class="box_introduce-text"><span>ưu đãi<br>vận chuyển</span></div>
+                    </div>
+
+                    <div class="box_introduce-border">
+                        <div class="box_introduce-icon"><i class="fa-solid fa-gift fa-2xl"></i>
+                        </div>
+                        <div class="box_introduce-text"><span>thể loại sách<br>phong phú</span></div>
+                    </div>
+
+                    <div class="box_introduce-border">
+                        <div class="box_introduce-icon"><i class="fa-solid fa-money-check-dollar fa-2xl"></i></div>
+                        <div class="box_introduce-text"><span>khuyến mãi<br>hấp dẫn</span></div>
+                    </div>
+
+                    <div class="box_introduce-border">
+                        <div class="box_introduce-icon"><i class="fa-solid fa-phone-volume fa-2xl"></i></div>
+                        <div class="box_introduce-text"><span>hotline:<br>0123456789<br>9876543210</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- body__box_introduce -->
+
+            <!-- body__wrapper_product -->
+            <div class="body__wrapper_product-bg">
+                <div class="body__wrapper_product-container">
+
+                    <!-- body__wrapper_product__menu -->
+                    <ul class="wrapper_product__ul-1">
+                        <li class="wrapper_product__li-1"><a class="wrapper_product__li-1__a" href="">sách mới</a>
+                        </li>
+                        <li class="wrapper_product__li-1"><a class="wrapper_product__li-1__a" href="">sách bán
+                                chạy</a></li>
+                        <li class="wrapper_product__li-1"><a class="wrapper_product__li-1__a" href="">hot deals</a>
+                        </li>
+                        <li class="wrapper_product__li-1"><a class="wrapper_product__li-1__a" href="">flash sale</a>
+                        </li>
+                    </ul>
+                    <!-- body__wrapper_product__menu -->
+
+                    <!-- body__wrapper_product__list_product -->
+                    <div class="wrapper_product__list_product-container">
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                        <div class="list_product-div_out">
+                            <div class="list_product-div_in">
+                                <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                        alt=""></a>
+                                <span><a href="">Người Trong Lưới</a></span>
+                                <div class="div_in-price">
+                                    <span class="div_in-price-sale">154,000<ins>đ</ins></span>
+                                    <span class="div_in-price-origin"><del>200,000<ins>đ</ins></del></span>
+                                </div>
+
+                                <div class="div_in__choice_hover">
+                                    <div>
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="div_out-label_sale">-23%</span>
+                        </div>
+
+                    </div>
+                    <!-- body__wrapper_product__list_product -->
+
+                    <!-- body__wrapper_product__button_see_more -->
+                    <div class="wrapper_product__button_see_more" style="text-align: center; padding-bottom: 50px;">
+                        <input type="submit" value="Xem thêm">
+                    </div>
+                    <!-- body__wrapper_product__button_see_more -->
+                </div>
+            </div>
+            <!-- body__wrapper_product -->
+
+            <!-- body__hnb -->
+            <div class="body__hnb-bg">
+                <div class="body__hnb-container">
+                    <div class="hnb_div">
+                        <img src="hnb_img_1.jpg" alt="">
+                    </div>
+                    <div class="hnb_div">
+                        <img src="hnb_img_2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- body__hnb -->
+
+            <!-- body__post -->
+            <div class="body__post-bg">
+                <div class="body__post-container">
+                    <div class="post-title">
+                        <span>bài viết mới</span>
+                    </div>
+                    <div class="wrapper_post">
+                        <div class="post_div">
+                            <a href=""><img
+                                    src="tiktok_shop_ipm_viet_nam_khai_truong_c9a30c7112df4fd99764028a169c46fa_large.jpg"
+                                    alt=""></a>
+                            <a href="">[sự kiện] ipm chính thức khai trương tiktok shop cùng 1001 ưu đãi hấp
+                                dẫn!</a>
+                            <span>Ngày 04.04.2023, IPM chính thức khai trương Tiktok Shop IPM Việt Nam, với mong
+                                muốn
+                                đưa
+                                các
+                                tựa sách hấp dẫn tiếp cận gần hơn tới các độc giả trên toàn quốc. Để chào mừng
+                                s...</span>
+                            <hr>
+                        </div>
+                        <div class="post_div">
+                            <a href=""><img src="1_8f094924c5354db0a7ff2ad7bf929db8_large.jpg" alt=""></a>
+                            <a href="">[sự kiện] gặp gỡ và ký tặng sách manga cùng bộ đôi tác giả "tình đầu nhạt
+                                phai"</a>
+                            <span>Chiều ngày 25/2/2023, tại nhà sách Nguyễn Huệ (40 Nguyễn Huệ, P. Bến Nghé, Q. 1,
+                                TP.
+                                HCM)
+                                đã
+                                diễn ra sự kiện gặp gỡ và ký tặng cùng bộ đôi tác giả Wataru Hinekure và họa sĩ
+                                minh...</span>
+                            <hr>
+                        </div>
+                        <div class="post_div">
+                            <a href=""><img
+                                    src="nui_chuot_quet_trinh_tham_trung_quoc_hay_c41187e9cfb34f8cb6845d3446b859a6_large.jpg"
+                                    alt=""></a>
+                            <a href="">[điểm sách] núi chuột quét - bóng tối ẩn sau ánh lửa nghiệt ngã</a>
+                            <span>Núi chuột quét là một trong những tác phẩm nổi bật nhất của Hồ Diễn Vân - cây bút
+                                tài
+                                năng
+                                của
+                                nền trinh thám Trung Quốc. Sức hấp dẫn của tác phẩm không chỉ đến từ cốt truyện
+                                cô...</span>
+                            <hr>
+                        </div>
+                        <div class="post_div">
+                            <a href=""><img
+                                    src="tiktok_shop_ipm_viet_nam_khai_truong_c9a30c7112df4fd99764028a169c46fa_large.jpg"
+                                    alt=""></a>
+                            <a href="">[sự kiện] ipm chính thức khai trương tiktok shop cùng 1001 ưu đãi hấp
+                                dẫn!</a>
+                            <span>Ngày 04.04.2023, IPM chính thức khai trương Tiktok Shop IPM Việt Nam, với mong
+                                muốn
+                                đưa
+                                các
+                                tựa sách hấp dẫn tiếp cận gần hơn tới các độc giả trên toàn quốc. Để chào mừng
+                                s...</span>
+                            <hr>
+                        </div>
+                        <div class="post_div">
+                            <a href=""><img src="1_8f094924c5354db0a7ff2ad7bf929db8_large.jpg" alt=""></a>
+                            <a href="">[sự kiện] gặp gỡ và ký tặng sách manga cùng bộ đôi tác giả "tình đầu nhạt
+                                phai"</a>
+                            <span>Chiều ngày 25/2/2023, tại nhà sách Nguyễn Huệ (40 Nguyễn Huệ, P. Bến Nghé, Q. 1,
+                                TP.
+                                HCM)
+                                đã
+                                diễn ra sự kiện gặp gỡ và ký tặng cùng bộ đôi tác giả Wataru Hinekure và họa sĩ
+                                minh...</span>
+                            <hr>
+                        </div>
+                        <div class="post_div">
+                            <a href=""><img
+                                    src="nui_chuot_quet_trinh_tham_trung_quoc_hay_c41187e9cfb34f8cb6845d3446b859a6_large.jpg"
+                                    alt=""></a>
+                            <a href="">[điểm sách] núi chuột quét - bóng tối ẩn sau ánh lửa nghiệt ngã</a>
+                            <span>Núi chuột quét là một trong những tác phẩm nổi bật nhất của Hồ Diễn Vân - cây bút
+                                tài
+                                năng
+                                của
+                                nền trinh thám Trung Quốc. Sức hấp dẫn của tác phẩm không chỉ đến từ cốt truyện
+                                cô...</span>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- body__post -->
+        </div>
+        <!-- body -->
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-bg">
+                <div class="footer-container">
+                    <!-- footer_1 -->
+                    <div class="f1">
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-location-dot fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Số 111 Nguyễn Ngọc Nại, Khương Mai, Thanh Xuân, Hà Nội</span>
+                            </div>
+                        </div>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-phone fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Hotline: 01 2345 6789</span>
+                            </div>
+                        </div>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-regular fa-envelope fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Email: online.ipmvn@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-shield-halved fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Giấy phép DKKD số 0123456789 cấp lần thứ 6 năm 2019</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer_1 -->
+
+                    <!-- footer_2 -->
+                    <div class="f2">
+                        <div class="f2_top">
+                            <div class="f2_top_left">
+                                <span class="th">hỗ trợ khách hàng</span>
+                                <div class="td">
+                                    <span><a href="">Câu hỏi thường gặp</a></span>
+                                    <span><a href="">Điểu khoản dịch vụ</a></span>
+                                </div>
+                            </div>
+                            <div class="f2_top_right">
+                                <span class="th">chính sách</span>
+                                <div class="td">
+                                    <span><a href="">Chính sách bảo mật</a></span>
+                                    <span><a href="">Chính sách thanh toán</a></span>
+                                    <span><a href="">Chính sách vận chuyển</a></span>
+                                    <span><a href="">Chính sách đổi trả</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f2_bot">
+                            <span class="th">
+                                đăng ký nhận tin
+                            </span>
+                            <span class="f2_bot_text">
+                                Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất của
+                                IPM
+                            </span>
+                            <div class="f2_bot_input">
+                                <input class="f2_bot_input_text" type="text" placeholder="Nhập email của bạn...">
+                                <button class="f2_bot_input_submit" type="submit">
+                                    đăng ký
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer_2 -->
+
+                    <!-- footer_3 -->
+                    <div class="f3">
+                        <span class="th">
+                            kết nối với chúng tôi
+                        </span>
+                        <div class="link_fb">
+                            <i class="fa-sharp fa-regular fa-window-minimize fa-rotate-90 fa-2xl"></i>
+                            <span>
+                                <a href="">
+                                    Facebook
+                                </a>
+                            </span>
+                        </div>
+                        <span class="th">
+                            các kênh khác
+                        </span>
+                        <div class="link_social">
+                            <a href="">
+                                <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-youtube fa-2xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- footer_3 -->
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+    </div>
+
+    <div class="modal">
+        <div class="modal_body">
+            <div class="modal_body-container">
+                <div class="modal_body__img">
+                    <img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg" alt="">
+                    <span class="div_out-label_sale">-23%</span>
+                </div>
+                <div class="modal_body__info">
+                    <div class="modal_body__info-title">
+                        <span>
+                            Người Trong Lưới
+                        </span>
+                    </div>
+                    <div class="modal_body__info-price">
+                        <span class="modal_body__info-price-sale">
+                            154,000<ins>đ</ins>
+                        </span>
+                        <span class="modal_body__info-price-origin">
+                            <del>200,000<ins>đ</ins></del>
+                        </span>
+                    </div>
+                    <div class="modal_body__info-description">
+                        <div class="modal_body__info-description-author info-description-container">
+                            <span class="modal_body__info-description-author-key info-description-key">
+                                Tác giả:
+                            </span>
+                            <span class="modal_body__info-description-author-value">
+                                Chan Ho Kei
+                            </span>
+                        </div>
+                        <div class="modal_body__info-description-publishing_company info-description-container">
+                            <span class="modal_body__info-description-publishing_company-key info-description-key">
+                                Nhà xuất bản:
+                            </span>
+                            <span class="modal_body__info-description-publishing_company-value">
+                                Hồng Đức
+                            </span>
+                        </div>
+                        <div class="modal_body__info-description-publishing_year info-description-container">
+                            <span class="modal_body__info-description-publishing_year-key info-description-key">
+                                Năm xuất bản:
+                            </span>
+                            <span class="modal_body__info-description-publishing_year-value">
+                                2023
+                            </span>
+                        </div>
+                        <div class="modal_body__info-description-size info-description-container">
+                            <span class="modal_body__info-description-size-key info-description-key">
+                                Kích thước:
+                            </span>
+                            <span class="modal_body__info-description-size-value">
+                                15.5 x 24cm
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal_body__info-content">
+                        <span class="modal_body__info-content-key info-description-key">
+                            Nội dung:
+                        </span>
+                        <br>
+                        <span class="modal_body__info-content-value">
+                            Thế chấp ảnh nóng vay tiền, cô gái phơi thây ngoài đường.Thi thể người phụ nữ mất tích
+                            được tìm...
+                        </span>
+                    </div>
+                    <div class="modal_body__info-version">
+                        <span class="modal_body__info-version-key info-description-key">
+                            Phiên bản
+                        </span>
+                        <br>
+                        <select name="" id="" class="modal_body__info-version-value">
+                            <option value="">
+                                Bản thường
+                            </option>
+                        </select>
+                    </div>
+                    <div class="modal_body__quantity_box">
+                        <span class="quantity_box-down">
+                            -
+                        </span>
+                        <input type="text" value="1">
+                        <span class="quantity_box-up">
+                            +
+                        </span>
+                    </div>
+                    <div class="modal_body__info-button">
+                        <a href="" class="modal_body__info-button_see_more">
+                            Xem thêm
+                        </a>
+                        <a href="" class="modal_body__info-button_add_cart">
+                            Mua ngay
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <button class="modal_body-button_close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/slide.js"></script>
+</body>
+
+</html>
