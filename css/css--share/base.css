@@ -75,7 +75,7 @@ html {
     width: 100%;
     align-self: center;
     justify-content: space-between;
-    margin-top: 14px;
+    margin-top: 17px;
 }
 
 .modal_body__img {
@@ -158,7 +158,7 @@ html {
     background-color: var(--text_black);
 }
 
-.modal_body__quantity_box input{
+.modal_body__quantity_box input {
     width: 45px;
     height: 50px;
     border: none;
@@ -192,7 +192,7 @@ html {
     display: block;
     color: var(--white_color);
     background-color: var(--main_color);
-    width: 120px;
+    width: 200px;
     height: 50px;
     border-radius: 5px;
     margin-right: 10px;

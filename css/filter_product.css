@@ -102,7 +102,7 @@
     flex-direction: column;
     text-align: center;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     transition: 0.5s;
     overflow: hidden;
 }
@@ -113,10 +113,13 @@
     transform: translateY(-3px);
 } */
 
-.list_product-div_in img {
-    height: 280px;
-    width: 200px;
-    margin-bottom: 5px;
+.list_product-div_in-img {
+    width: 195px;
+    margin-bottom: 10px;
+}
+
+.list_product-div_in-img img {
+    width: 100%;
 }
 
 .list_product-div_in span {
@@ -178,7 +181,7 @@
 .div_in__choice_hover {
     position: absolute; 
     right: 0; 
-    top: 9rem; 
+    top: 46%; 
     margin-right: 5px; 
     transform: translateX(calc(100% + 5px));
 }

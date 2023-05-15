@@ -104,12 +104,12 @@
                             <ul class="cart_badge__list">
                                 <li class="cart_badge__items">
                                     <div class="cart_badge__items-img">
-                                        <a href=""><img
+                                        <a href="detail_product.html"><img
                                                 src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
                                                 alt=""></a>
                                     </div>
                                     <div class="cart_badge__items-info">
-                                        <a class="cart_badge__items-name" href="">
+                                        <a class="cart_badge__items-name" href="detail_product.html">
                                             Người Trong Lưới
                                         </a>
                                         <div class="cart_badge__items-description">
@@ -211,10 +211,12 @@
                                     <input type="checkbox" name="" id="">
                                 </div>
                                 <div class="checkbox_cart__infor_product-img">
-                                    <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg" alt=""></a>
+                                    <a href="detail_product.html"><img
+                                            src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                            alt=""></a>
                                 </div>
                                 <div class="checkbox_cart__infor_product-name_and_price">
-                                    <a href="" class="checkbox_cart__infor_product-name">
+                                    <a href="detail_product.html" class="checkbox_cart__infor_product-name">
                                         Người trong lưới
                                     </a>
                                     <div class="checkbox_cart__infor_product-price">
@@ -248,10 +250,12 @@
                                     <input type="checkbox" name="" id="">
                                 </div>
                                 <div class="checkbox_cart__infor_product-img">
-                                    <a href=""><img src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg" alt=""></a>
+                                    <a href="detail_product.html"><img
+                                            src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                            alt=""></a>
                                 </div>
                                 <div class="checkbox_cart__infor_product-name_and_price">
-                                    <a href="" class="checkbox_cart__infor_product-name">
+                                    <a href="detail_product.html" class="checkbox_cart__infor_product-name">
                                         Người trong lưới
                                     </a>
                                     <div class="checkbox_cart__infor_product-price">
@@ -291,13 +295,11 @@
                                 0<ins>đ</ins>
                             </span>
                         </div>
-                        <div class="pay_cart__button_pay">
-                            <button>
-                                <span>
-                                    Thanh toán
-                                </span>
-                            </button>
-                        </div>
+                        <button class="pay_cart__button_pay" type="submit">
+                            <span>
+                                Thanh toán
+                            </span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -424,22 +426,6 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/slide.js"></script>
-    <script src="js/validator.js"></script>
-    <script>
-        Validator({
-            form: `#form-1`,
-            mesg: `.form-mesg`,
-            formGroup: `.sign_up-infor-div`,
-            rules: [
-                required(`#email`, `Chưa nhập email!`),
-                required(`#password`, `Chưa nhập password!`),
-                // required(`input[name="gender"]`, `Chưa chọn giới tính!`),
-            ],
-            submitSuccess: function (data) {
-                console.log(data)
-            }
-        })
-    </script>
 </body>
 
 </html>
