@@ -34,9 +34,9 @@
 .box_introduce-border {
     display: flex;
     border: 1px solid var(--main_color);
-    height: 80px;
+    height: 90px;
     border-radius: 5px;
-    width: 230px;
+    width: 270px;
 }
 
 .box_introduce-border div {
@@ -44,6 +44,7 @@
 }
 
 .box_introduce-icon {
+    font-size: 20px;
     padding-left: 30px;
     padding-right: 50px;
     width: 30%;
@@ -99,14 +100,6 @@
 }
 
 .wrapper_product__li-1:hover .wrapper_product__li-1__a {
-    color: var(--main_color);
-}
-
-.wrapper_product__li-1:first-child {
-    border-bottom: 2px solid var(--main_color);
-}
-
-.wrapper_product__li-1:first-child .wrapper_product__li-1__a {
     color: var(--main_color);
 }
 /* body__wrapper_product__menu */
