@@ -82,7 +82,7 @@
 }
 
 .info-description-container {
-    width: 50%;
+    width: 100%;
     float: left;
     margin-bottom: 10px;
 }
@@ -199,7 +199,12 @@
     position: relative;
     margin-bottom: 30px;
     transition: 0.5s;
-    width: 19%;
+    width: 18%;
+    margin-right: 2.5%;
+}
+
+.list_product-div_out:nth-child(5n) {
+    margin-right: 0;
 }
 
 .list_product-div_in {
@@ -219,6 +224,7 @@
 } */
 
 .list_product-div_in-img {
+    width: 100%;
     margin-bottom: 10px;
 }
 

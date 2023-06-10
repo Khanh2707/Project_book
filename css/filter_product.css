@@ -93,7 +93,6 @@
 .page_product__body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 70px;
 }
 
@@ -114,7 +113,7 @@
 } */
 
 .list_product-div_in-img {
-    width: 195px;
+    width: 100%;
     margin-bottom: 10px;
 }
 
@@ -166,6 +165,12 @@
     position: relative;
     margin-bottom: 30px;
     transition: 0.5s;
+    width: 22.75%;
+    margin-right: 3%;
+}
+
+.list_product-div_out:nth-child(4n) {
+    margin-right: 0;
 }
 
 .list_product-div_out:hover {

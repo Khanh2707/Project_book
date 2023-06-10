@@ -68,7 +68,7 @@
 
 .header__logo {
     align-self: center;
-    width: 170px;
+    width: 200px;
 }
 
 .header__logo img {
@@ -374,20 +374,5 @@
 
 .hr--style {
     border-top: 1px solid #F8F8FF;
-}
-
-.header__menu__ul-3 {
-    position: absolute;
-    background-color: #F8F8FF;
-    list-style: none;
-    display: none;
-    padding: 0px 10px;
-    z-index: 1;
-    left: 210px;
-    top: 0px;
-}
-
-.header__menu__ul-2 li:hover .header__menu__ul-3 {
-    display: block;
 }
 /* header__menu */

@@ -5,210 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CÔNG TY CỔ PHẦN XUẤT BẢN VÀ TRUYỀN THÔNG IPM</title>
+    <title>Nhà sách trực tuyến Karma</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" type="image/x-icon" href="title_logo.jpg">
+    <link rel="icon" type="image/x-icon" href="Karma-logo.png">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="css/css--share/header.css">
+    <link rel="stylesheet" href="css/css--share/footer.css">
+    <link rel="stylesheet" href="css/css--share/base.css">
+    <!-- <link rel="stylesheet" href="css/news.css"> -->
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* head */
-
-        #header {
-            margin: auto;
-            background-color: #008B45;
-            width: 100%;
-            height: 50px;
-            line-height: 50px;
-            display: flex;
-            justify-content: space-between;
-
-        }
-
-        #header span {
-            color: white;
-            text-transform: uppercase;
-        }
-
-        #header a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #title {
-            padding-left: 170px;
-        }
-
-        #login {
-            padding-right: 200px;
-        }
-
-        #login a:hover {
-            color: rgba(255, 255, 255, 0.818);
-        }
-
-        #search {
-            display: flex;
-            height: 90px;
-            padding: 15px 0px;
-            background-color: #F8F8FF;
-            justify-content: space-between;
-        }
-
-        #input_search {
-            display: flex;
-            align-self: center;
-        }
-
-        #input_search input {
-            height: 40px;
-            width: 500px;
-            border-radius: 20px 0px 0px 20px;
-            border: 1px solid #008B45;
-            padding: 0px 15px;
-        }
-
-        #input_search input:focus {
-            outline: none;
-        }
-
-        #input_search button {
-            background-color: #008B45;
-            height: 40px;
-            width: 60px;
-            border-radius: 0px 20px 20px 0px;
-            border: none;
-            cursor: pointer;
-        }
-
-        #input_search button:hover {
-            background-color: #00ac56;
-        }
-
-        #logo_search {
-            padding-left: 170px;
-        }
-
-        #shopping {
-            align-self: center;
-            padding-right: 170px;
-        }
-
-        #shopping a {
-            align-self: center;
-            display: flex;
-            text-decoration: none;
-        }
-
-        #shopping a div {
-            align-self: center;
-        }
-
-        #shopping_img {
-            padding-right: 20px;
-            position: relative;
-        }
-
-        .count_product {
-            position: absolute;
-            color: #008B45;
-            background-color: white;
-            padding: 2px 8px;
-            border: 1px solid #008B45;
-            border-radius: 20px;
-            top: -20px;
-            right: 5px;
-        }
-
-        #cart_text {
-            font-weight: bold;
-            color: black;
-            font-size: 20px;
-        }
-
-        #shopping a div span {
-            color: black;
-        }
-
-        #menu {
-            height: 50px;
-        }
-
-        .sp_container {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-        }
-
-        .sp {
-            line-height: 50px;
-            margin: 0px 60px;
-            padding: 0px 15px;
-            position: relative;
-        }
-
-        .sp_a {
-            color: #333333;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .sp:hover .sp_a {
-            color: #008B45;
-        }
-
-        .sp:first-child a {
-            color: #008B45;
-        }
-
-        .sub_menu {
-            position: absolute;
-            background-color: #F8F8FF;
-            list-style: none;
-            left: 0px;
-            display: none;
-            padding: 0px 10px;
-        }
-
-        .sp:hover .sub_menu {
-            display: block;
-        }
-
-        .sub_menu li {
-            width: 170px;
-            height: 43px;
-            line-height: 43px;
-            border-bottom: 1px dashed #777777;
-            cursor: pointer;
-        }
-
-        .sub_menu li a {
-            font-weight: lighter;
-            color: #333333;
-            text-decoration: none;
-            text-transform: capitalize;
-        }
-
-        .sub_menu li:hover a {
-            color: orangered;
-        }
-
-        .hr_style {
-            border-top: 1px solid #f8f8ff6a;
-        }
-
-
-
-        /* body */
-
         #body {
             margin: 80px auto;
             width: 80%;
@@ -234,222 +42,53 @@
         .text {
             color: #444444;
         }
-
-
-        /* footer */
-
-        #footer {
-            display: flex;
-            background-color: #333333;
-            color: white;
-            padding: 30px 0px;
-            justify-content: center;
-            width: 100%;
-        }
-
-        #f1 {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            margin-right: 50px;
-        }
-
-        .f1_content {
-            display: flex;
-            padding: 15px 0px;
-            width: 100%;
-        }
-
-        .f1_content div {
-            align-self: center;
-        }
-
-        .icon_f1_content {
-            border: 1px solid white;
-            padding: 10px;
-            border-radius: 50px;
-            margin-right: 10px;
-        }
-
-        .f1_content:nth-child(2) i {
-            padding: 0px 3px;
-        }
-
-        #f1_logo {
-            padding-bottom: 20px;
-        }
-
-        #f2 {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-        }
-
-        #f2 a {
-            color: #CFCFCF;
-            text-decoration: none;
-            font-size: 15px;
-        }
-
-        #f2 a:hover {
-            color: #008B45;
-        }
-
-        #f2_top {
-            display: flex;
-            margin-bottom: 30px;
-        }
-
-        #f2_top_left {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-            margin-right: 50px;
-        }
-
-        #f2_top_right {
-            display: flex;
-            flex-direction: column;
-            width: 50%;
-        }
-
-        #f2_bot {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #f2_bot_text {
-            font-size: 14px;
-            padding: 10px 0px;
-            color: #DDDDDD;
-        }
-
-        #f2_bot_input {
-            display: flex;
-        }
-
-        #f2_bot_input_text {
-            width: 220px;
-            height: 35px;
-            border-radius: 20px 0px 0px 20px;
-            border: none;
-            padding: 0px 15px;
-        }
-
-        #f2_bot_input_text:focus {
-            outline: none;
-        }
-
-        #f2_bot_input_submit {
-            width: 100px;
-            height: 35px;
-            text-align: center;
-            border: none;
-            border-radius: 0px 20px 20px 0px;
-            font-size: 15px;
-            text-transform: uppercase;
-            color: white;
-            background-color: #008B45;
-            cursor: pointer;
-        }
-
-        #f2_bot_input_submit:hover {
-            color: #333333;
-        }
-
-        #f3 {
-            display: flex;
-            flex-direction: column;
-            width: 25%;
-            padding-left: 50px;
-        }
-
-        #f3 span:first-child {
-            margin-bottom: 30px;
-        }
-
-        #link_fb {
-            margin-bottom: 50px;
-        }
-
-        #link_fb a {
-            color: white;
-            text-decoration: none;
-        }
-
-        #link_fb a:hover {
-            color: #008B45;
-        }
-
-        #link_social {
-            padding-top: 20px;
-        }
-
-        #link_social a {
-            padding-right: 10px;
-        }
-
-        #link_social a i {
-            color: white;
-            transition: 0.3s;
-        }
-
-        #link_social a:hover i.fa-brands {
-            color: #008B45;
-            transition: 0.3s;
-            transform: scale(1.5);
-        }
-
-        .th {
-            text-transform: uppercase;
-            font-size: 15px;
-            font-weight: bold;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .td {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-
-        .td span {
-            margin-top: 10px;
-        }
     </style>
 </head>
 
 <body>
-    <form action="">
-        <div id="container">
-            <div id="head">
-                <div id="header">
-                    <div id="title">
-                        <span>công ty cổ phần xuất bản và truyền thông ipm</span>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__navbar -->
+            <div class="header__navbar-bg">
+                <div class="header__navbar-container">
+                    <div class="header__navbar-title">
+                        <span>Nhà sách trực tuyến Karma</span>
                     </div>
-                    <div id="login">
-                        <a href="sign_up.html">Đăng ký</a> <span>|</span> <a href="sign_in.html">Đăng nhập</a>
+                    <!-- Are login: header__navbar-login--not_login -->
+                    <!-- No login: header__navbar-login--are_login -->
+                    <div class="header__navbar-login header__navbar-login--not_login">
+                        <span class="navbar-login--not_login_text"><a href="sign_up.html">Đăng ký</a> | <a
+                                href="sign_in.html">Đăng nhập</a></span>
+                        <span class="navbar-login--are_login_text"><a href="">Xin chào: Khánh</a> | <a href="">Đăng
+                                xuất</a></span>
                     </div>
                 </div>
-                <div id="search">
-                    <div id="logo_search">
-                        <a href="home.html"><img src="logo.jpg" alt=""></a>
+            </div>
+            <!-- header__navbar -->
+
+            <!-- header__search -->
+            <div class="header__search-bg">
+                <div class="header__search-container">
+                    <div class="header__logo">
+                        <a href="home.html"><img src="Karma-logo.png" alt=""></a>
                     </div>
-                    <div id="input_search">
+                    <div class="header__search_bar">
                         <div>
                             <input type="search" placeholder="Tìm kiếm...">
                         </div>
-                        <button><svg height="30px" id="SVGRoot" version="1.1" viewBox="0 0 100 60" width="64px"
+                        <button><svg height="30px" class="SVGRoot" version="1.1" viewBox="0 0 100 60" width="64px"
                                 xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#"
                                 xmlns:dc="http://purl.org/dc/elements/1.1/"
                                 xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
                                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                                 xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
                                 xmlns:svg="http://www.w3.org/2000/svg">
-                                <defs id="defs3848"></defs>
-                                <g id="layer1">
-                                    <g id="g5183" style="stroke:#000000" transform="translate(25.5,-27)">
-                                        <circle class="fil0 str1" cx="0.73810571" cy="53.392174" id="circle15"
+                                <defs class="defs3848"></defs>
+                                <g class="layer1">
+                                    <g class="g5183" style="stroke:#000000" transform="translate(25.5,-27)">
+                                        <circle class="fil0 str1" cx="0.73810571" cy="53.392174" class="circle15"
                                             r="20.063322"
                                             style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#FFFFFF;stroke-width:2.00005412;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
                                         </circle>
@@ -458,55 +97,112 @@
                                             x1="15.617603" x2="30.305107" y1="68.559662" y2="83.151169"></line>
                                         <path class="fil0 str0"
                                             d="m -12.701441,53.392174 c 0,-7.391751 6.047795,-13.439547 13.43954602,-13.439547"
-                                            id="path281"
+                                            class="path281"
                                             style="clip-rule:evenodd;fill:none;fill-rule:evenodd;stroke:#FFFFFF;stroke-width:2.00005412;stroke-linecap:round;stroke-linejoin:round;image-rendering:optimizeQuality;shape-rendering:geometricPrecision;text-rendering:geometricPrecision">
                                         </path>
                                     </g>
                                 </g>
                             </svg></button>
                     </div>
-                    <div id="shopping">
-                        <a href="">
-                            <div id="shopping_img">
-                                <i class="fa-solid fa-cart-plus fa-2xl" style="color: #008B45;"></i>
-                                <span class="count_product" style="color: #006331;">3</span>
+                    <div class="header__cart">
+                        <a href="cart.html" class="header__cart-link">
+                            <div class="cart__cart_badge">
+                                <i class="fa-solid fa-cart-plus fa-2xl"></i>
+                                <span>3</span>
                             </div>
-                            <div>
-                                <span id="cart_text">Giỏ hàng</span><br>
+                            <div class="cart__text">
+                                <span class="cart_text">Giỏ hàng</span><br>
                                 <span>3</span>
                                 <span>sản phẩm</span>
                             </div>
                         </a>
+                        <!-- No product: cart__cart_badge--hover--no_product -->
+                        <!-- Has product: cart__cart_badge--hover--has_product -->
+                        <div class="cart__cart_badge--hover cart__cart_badge--hover--has_product">
+                            <img class="cart__cart_badge--hover--no_product-img" src="empty_cart.jpg" alt="">
+                            <span class="cart__cart_badge--hover--no_product-msg">
+                                Chưa có sản phẩm
+                            </span>
+
+                            <header class="cart_badge__header">
+                                <span>Số lượng sản phẩm: </span>
+                                <span>1</span>
+                            </header>
+                            <ul class="cart_badge__list">
+                                <li class="cart_badge__items">
+                                    <div class="cart_badge__items-img">
+                                        <a href="detail_product.html"><img
+                                                src="nguoi_trong_luoi_20b258d487104ac6a1d9859db5bbeed4_large.jpg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="cart_badge__items-info">
+                                        <a class="cart_badge__items-name" href="detail_product.html">
+                                            Người Trong Lưới
+                                        </a>
+                                        <div class="cart_badge__items-description">
+                                            <span class="items-description-version">
+                                                Bản thường
+                                            </span>
+                                            <br>
+                                            <span class="items-description-quantity">
+                                                154,000 x 1
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <span class="cart_badge__items-times"><a href=""><i
+                                                class="fa-solid fa-circle-xmark"></i></a></span>
+                                </li>
+                            </ul>
+                            <div class="cart_badge__capital_sum">
+                                <span>Tổng tiền: </span>
+                                <span>154,000<ins>đ</ins></span>
+                            </div>
+                            <a href="" class="wrapper_test">
+                                <span>
+                                    Thanh toán
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <!-- header__search -->
 
-                <div id="menu">
-                    <ul class="sp_container">
-                        <li class="sp"><a class="sp_a" href="home.html">trang chủ</a></li>
-                        <li class="sp"><a class="sp_a" href="product.html">sản phẩm</a>
-                            <ul class="sub_menu">
+            <!-- header__menu -->
+            <div class="header__menu-bg">
+                <div class="header__menu-container">
+                    <ul class="header__menu__ul-1">
+                        <li class="header__menu__li-1">
+                            <a class="header__menu__li-1__a" href="home.html">trang chủ</a></li>
+                        <li class="header__menu__li-1">
+                            <a class="header__menu__li-1__a" href="filter_product.html">sản phẩm</a>
+                            <ul class="header__menu__ul-2">
                                 <li><a href="">trinh thám - kinh dị</a></li>
-                                <li><a href="">văn học hiện đại</a></li>
-                                <li><a href="">văn học kinh điển</a></li>
-                                <li><a href="">fantasy</a></li>
-                                <li><a href="">light novel</a></li>
-                                <li><a href="">boys love - girls love</a></li>
-                                <li><a href="">boxset</a></li>
+                                <li><a href="">văn học</a></li>
+                                <li><a href="">kinh tế</a>
+                                <li><a href="">tâm lý - kỹ năng sống</a></li>
+                                <li><a href="">sách thiếu nhi</a></li>
+                                <li><a href="">tiểu sử - hồi ký</a></li>
                                 <li><a href="">sách học ngữ</a></li>
                                 <li><a href="">manga - comic</a></li>
-                                <li><a href="">sách thiếu nhi</a></li>
-                                <li><a href="">phụ kiện</a></li>
-                                <li><a href="">combo sách</a></li>
                             </ul>
                         </li>
-                        <li class="sp"><a class="sp_a" href="">tin tức</a></li>
-                        <li class="sp"><a class="sp_a" href="news.html">về ipm</a></li>
-                        <li class="sp"><a class="sp_a" href="">liên hệ</a></li>
+                        <li class="header__menu__li-1">
+                            <a class="header__menu__li-1__a" href="">tin tức</a>
+                        </li>
+                        <li class="header__menu__li-1">
+                            <a class="header__menu__li-1__a" href="news.html">về karma</a>
+                        </li>
                     </ul>
                 </div>
-                <hr class="hr_style">
             </div>
+            <hr class="hr--style">
+            <!-- header__menu -->
+        </header>
+        <!-- header -->
 
+        <!-- body -->
             <div id="body">
                 <span class="introduce">giới thiệu</span>
                 <hr class="hr_style">
@@ -551,93 +247,124 @@
                 <span class="text">Xây dựng, phát triển mô hình kinh doanh bền vững trên nền tảng đảm bảo phục vụ tốt
                     nhất các quyền lợi của khách hàng, nhân viên và các cổ đông.</span>
             </div>
+        <!-- body -->
 
-            <div id="footer">
-                <div id="f1">
-                    <div id="f1_logo">
-                        <img src="title_logo.jpg" alt="">
-                    </div>
-                    <div class="f1_content">
-                        <div class="icon_f1_content">
-                            <i class="fa-solid fa-location-dot fa-xl" style="color: white;"></i>
-                        </div>
-                        <div class="text_f1_content">
-                            <span>Số 111 Nguyễn Ngọc Nại, Khương Mai, Thanh Xuân, Hà Nội</span>
-                        </div>
-                    </div>
-
-                    <div class="f1_content">
-                        <div class="icon_f1_content">
-                            <i class="fa-solid fa-phone fa-xl" style="color: white;"></i>
-                        </div>
-                        <div class="text_f1_content">
-                            <span>Hotline: 01 2345 6789</span>
-                        </div>
-                    </div>
-
-                    <div class="f1_content">
-                        <div class="icon_f1_content">
-                            <i class="fa-regular fa-envelope fa-xl" style="color: white;"></i>
-                        </div>
-                        <div class="text_f1_content">
-                            <span>Email: online.ipmvn@gmail.com</span>
-                        </div>
-                    </div>
-
-                    <div class="f1_content">
-                        <div class="icon_f1_content">
-                            <i class="fa-solid fa-shield-halved fa-xl" style="color: white;"></i>
-                        </div>
-                        <div class="text_f1_content">
-                            <span>Giấy phép DKKD số 0123456789 cấp lần thứ 6 năm 2019</span>
-                        </div>
-                    </div>
-                </div>
-                <div id="f2">
-                    <div id="f2_top">
-                        <div id="f2_top_left">
-                            <span class="th">hỗ trợ khách hàng</span>
-                            <div class="td">
-                                <span><a href="">Câu hỏi thường gặp</a></span>
-                                <span><a href="">Điểu khoản dịch vụ</a></span>
+        <!-- footer -->
+        <div class="footer">
+            <div class="footer-bg">
+                <div class="footer-container">
+                    <!-- footer_1 -->
+                    <div class="f1">
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-location-dot fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Số 111 Nguyễn Ngọc Nại, Khương Mai, Thanh Xuân, Hà Nội</span>
                             </div>
                         </div>
-                        <div id="f2_top_right">
-                            <span class="th">chính sách</span>
-                            <div class="td">
-                                <span><a href="">Chính sách bảo mật</a></span>
-                                <span><a href="">Chính sách thanh toán</a></span>
-                                <span><a href="">Chính sách vận chuyển</a></span>
-                                <span><a href="">Chính sách đổi trả</a></span>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-phone fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Hotline: 01 2345 6789</span>
+                            </div>
+                        </div>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-regular fa-envelope fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Email: online.ipmvn@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="f1_content">
+                            <div class="icon_f1_content">
+                                <i class="fa-solid fa-shield-halved fa-xl" style="color: white;"></i>
+                            </div>
+                            <div class="text_f1_content">
+                                <span>Giấy phép DKKD số 0123456789 cấp lần thứ 6 năm 2019</span>
                             </div>
                         </div>
                     </div>
-                    <div id="f2_bot">
-                        <span class="th">đăng ký nhận tin</span>
-                        <span id="f2_bot_text">Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức
-                            mới nhất của IPM</span>
-                        <div id="f2_bot_input">
-                            <input id="f2_bot_input_text" type="text" placeholder="Nhập email của bạn...">
-                            <button id="f2_bot_input_submit" type="submit">đăng ký</button>
+                    <!-- footer_1 -->
+
+                    <!-- footer_2 -->
+                    <div class="f2">
+                        <div class="f2_top">
+                            <div class="f2_top_left">
+                                <span class="th">hỗ trợ khách hàng</span>
+                                <div class="td">
+                                    <span><a href="">Câu hỏi thường gặp</a></span>
+                                    <span><a href="">Điểu khoản dịch vụ</a></span>
+                                </div>
+                            </div>
+                            <div class="f2_top_right">
+                                <span class="th">chính sách</span>
+                                <div class="td">
+                                    <span><a href="">Chính sách bảo mật</a></span>
+                                    <span><a href="">Chính sách thanh toán</a></span>
+                                    <span><a href="">Chính sách vận chuyển</a></span>
+                                    <span><a href="">Chính sách đổi trả</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="f2_bot">
+                            <span class="th">
+                                đăng ký nhận tin
+                            </span>
+                            <span class="f2_bot_text">
+                                Hãy nhập email của bạn vào ô dưới đây để có thể nhận được tất cả tin tức mới nhất
+                                của IPM
+                            </span>
+                            <div class="f2_bot_input">
+                                <input class="f2_bot_input_text" type="text" placeholder="Nhập email của bạn...">
+                                <button class="f2_bot_input_submit" type="submit">
+                                    đăng ký
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div id="f3">
-                    <span class="th">kết nối với chúng tôi</span>
-                    <div id="link_fb">
-                        <i class="fa-sharp fa-regular fa-window-minimize fa-rotate-90 fa-2xl"></i>
-                        <span><a href="https://www.facebook.com/ipmvn">Facebook</a></span>
+                    <!-- footer_2 -->
+
+                    <!-- footer_3 -->
+                    <div class="f3">
+                        <span class="th">
+                            kết nối với chúng tôi
+                        </span>
+                        <div class="link_fb">
+                            <i class="fa-sharp fa-regular fa-window-minimize fa-rotate-90 fa-2xl"></i>
+                            <span>
+                                <a href="">
+                                    Facebook
+                                </a>
+                            </span>
+                        </div>
+                        <span class="th">
+                            các kênh khác
+                        </span>
+                        <div class="link_social">
+                            <a href="">
+                                <i class="fa-brands fa-square-facebook fa-2xl"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-twitter fa-2xl"></i>
+                            </a>
+                            <a href="">
+                                <i class="fa-brands fa-square-youtube fa-2xl"></i>
+                            </a>
+                        </div>
                     </div>
-                    <span class="th">các kênh khác</span>
-                    <div id="link_social">
-                        <a href="https://www.facebook.com/ipmvn"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
-                        <a href="https://twitter.com/IPMVN"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
-                        <a href="https://www.youtube.com/channel/UCGoqHfFgFAyPYXv9qI5mXXQ"><i class="fa-brands fa-square-youtube fa-2xl"></i></a>
-                    </div>
+                    <!-- footer_3 -->
                 </div>
             </div>
         </div>
-    </form>
+        <!-- footer -->
+    </div>
 </body>
 
 </html>
